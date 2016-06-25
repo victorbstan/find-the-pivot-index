@@ -43,7 +43,7 @@ class SumPivot
   private
 
   def split(arr, index)
-    # can't sun unless we have at least two values to the left and right of index
+    # can't sum unless we have at least two values to the left and right of index
     if index > 1 && index < (@arr_length - 2)
       @arr_l = arr[0..(index-1)]
       @arr_r = arr[(index+1)..@arr_length]
